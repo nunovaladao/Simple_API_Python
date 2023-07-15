@@ -23,9 +23,9 @@ pip3 install requests
 
 ## Usage
 
-1. Run the Flask application:
+1. Run the Flask application - for mac:
 ``` bash
-python app.py
+python3 app.py
 ``` 
 2. Interact with the API using a tool like **Postman** or a **web browser**. Below are the available endpoints:
 - `GET /books: Retrieve all books`
