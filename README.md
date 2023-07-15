@@ -33,6 +33,7 @@ python3 app.py
 - `PUT /books/<id>: Update a book by its ID.`
 - `POST /books: Create a new book`
 - `DELETE /books/<id>: Delete a book by its ID.`
+
 **Note:** Replace <id> with the actual ID of the book.
 
 ##
