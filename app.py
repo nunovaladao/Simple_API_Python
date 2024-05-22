@@ -25,7 +25,7 @@ books = [
     },
     {
         'id': 5,
-        'título': 'Icebreaker',
+        'titulo': 'Icebreaker',
         'Autor': 'Hannah Grace'
     },
 ]
@@ -34,7 +34,7 @@ books = [
 def consult_books():
     """
     Consults all the books.
-    
+
     Returns:
         JSON: A JSON object containing all the books.
     """
@@ -44,10 +44,10 @@ def consult_books():
 def get_book(id):
     """
     Retrieves a book by its ID.
-    
+
     Args:
         id (int): The ID of the book to retrieve.
-    
+
     Returns:
         JSON: A JSON object containing the book information.
     """
@@ -59,10 +59,10 @@ def get_book(id):
 def edit_book(id):
     """
     Edits a book by its ID.
-    
+
     Args:
         id (int): The ID of the book to edit.
-    
+
     Returns:
         JSON: A JSON object containing the updated book information.
     """
@@ -76,7 +76,7 @@ def edit_book(id):
 def new_book():
     """
     Creates a new book.
-    
+
     Returns:
         JSON: A JSON object containing the updated list of books.
     """
@@ -88,10 +88,10 @@ def new_book():
 def delete_book(id):
     """
     Deletes a book by its ID.
-    
+
     Args:
         id (int): The ID of the book to delete.
-    
+
     Returns:
         JSON: A JSON object containing the updated list of books.
     """
@@ -100,4 +100,4 @@ def delete_book(id):
             del books[index]
     return jsonify(books)
 
-app.run(port=5001, host='localhost', debug=True)
+app.run(port=5002, host='localhost', debug=True)
